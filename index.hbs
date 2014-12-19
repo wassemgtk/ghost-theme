@@ -1,12 +1,14 @@
 {{!< default}}
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 
-<main role="main">
+{{> header}}
+
 {{#foreach posts}}
-    {{> post-desc}}
+	{{> post-desc}}
 {{/foreach}}
 
 {{#if pagination}}
-    {{{pagination}}}
+	{{{pagination}}}
 {{/if}}
-</main>
+
+{{> footer}}
