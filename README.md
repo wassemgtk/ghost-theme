@@ -1,4 +1,8 @@
-ghost-theme
+TransferWise Ghost theme
 ===========
 
-TransferWise theme on Ghost blogging platform https://ghost.org/
+### Contributing
+
+#### Linters
+
+Please use SCSSlint and JShint, conf files are located in theme root dir
