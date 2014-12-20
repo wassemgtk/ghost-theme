@@ -1,0 +1,13 @@
+{{#if author}}
+	<div>
+		<address itemscope itemtype="http://schema.org/Person">
+			{{#if author.image}}
+				<img src="{{author.image}}" itemprop="image" />
+			{{/if}}
+			<h4>
+				<span itemprop="author">{{author.name}}</span>
+			</h4>
+		</address>
+		<p>{{author.bio}}</p>
+	</div>
+{{/if}}

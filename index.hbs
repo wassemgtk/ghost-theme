@@ -2,13 +2,5 @@
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 
 {{> header}}
-
-{{#foreach posts}}
-	{{> post-desc}}
-{{/foreach}}
-
-{{#if pagination}}
-	{{{pagination}}}
-{{/if}}
-
+{{> posts-list}}
 {{> footer}}

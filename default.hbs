@@ -28,7 +28,8 @@
 	<link rel="shortcut icon" href="{{asset "favicon.ico"}}">
 
 	{{! Styles'n'Scripts }}
-	<link rel="stylesheet" type="text/css" href="{{asset "css/styles.css"}}" />
+	<link rel="stylesheet" type="text/css" href="{{asset "styles/prism.css"}}" />
+	<link rel="stylesheet" type="text/css" href="{{asset "styles/main.css"}}" />
 
 	{{! Ghost outputs important style and meta data with this tag }}
 	{{ghost_head}}
@@ -41,5 +42,8 @@
 
 	{{! Ghost outputs important scripts and data with this tag }}
 	{{ghost_foot}}
+
+	{{! Scripts }}
+	<script type="text/javascript" src="{{asset "js/prism.min.js"}}"></script>
 </body>
 </html>
