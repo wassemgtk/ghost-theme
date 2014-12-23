@@ -1,6 +1,11 @@
+html {
+  height: 100%;
+}
+
 body {
   background: $light;
   color: $text;
+  min-height: 100%;
 }
 
 a {
