@@ -1,8 +1,4 @@
 @charset "UTF-8";
-/******************************************************************************\
-    Vendor imports
-\******************************************************************************/
-@import url("http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700");
 article,
 aside,
 details,
@@ -199,26 +195,23 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/******************************************************************************\
-    Variables
-\******************************************************************************/
-/******************************************************************************\
-    Grid settings
-\******************************************************************************/
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/******************************************************************************\
-    Includes
-\******************************************************************************/
 @font-face {
   font-family: "northemes-icons";
   font-weight: normal;
   font-style: normal;
-  src: url("../fonts/northemes-icons.eot");
-  src: url("../fonts/northemes-icons.eot?#iefix") format("embedded-opentype"), url("../fonts/northemes-icons.woff") format("woff"), url("../fonts/northemes-icons.ttf") format("truetype"), url("../fonts/northemes-icons.svg#northemes-icons") format("svg"); }
+  src: url("../fonts/Icons/northemes-icons.eot");
+  src: url("../fonts/Icons/northemes-icons.eot?#iefix") format("embedded-opentype"), url("../fonts/Icons/northemes-icons.woff") format("woff"), url("../fonts/Icons/northemes-icons.ttf") format("truetype"), url("../fonts/Icons/northemes-icons.svg#northemes-icons") format("svg"); }
+@font-face {
+  font-family: "SharpSans";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/SharpSans/SharpSansFrontieres-Light.eot");
+  src: url("../fonts/SharpSans/SharpSansFrontieres-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/SharpSans/SharpSansFrontieres-Light.woff") format("woff"), url("../fonts/SharpSans/SharpSansFrontieres-Light.ttf") format("truetype"), url("../fonts/SharpSans/SharpSansFrontieres-Light.svg#SharpSans") format("svg"); }
 /******************************************************************************\
     Functions
 \******************************************************************************/
@@ -754,19 +747,12 @@ table {
     -o-transform: perspective(400px) rotateY(0deg);
     transform: perspective(400px) rotateY(0deg);
     opacity: 1; } }
-/**
- * SCSS template for the sites base styles
- *
- * @package Ghost
- * @subpackage Plattan
- * @since Plattan 1.0
- */
 body {
   background: #fafaf9;
   color: #111111; }
 
 a {
-  color: #ef4f47;
+  color: #00C6FF;
   text-decoration: none; }
 
 h1 a {
@@ -822,15 +808,8 @@ p code {
 .site {
   overflow: hidden; }
 
-/**
- * SCSS template base typography styles
- *
- * @package Ghost
- * @subpackage Plattan
- * @since Plattan 1.0
- */
 body {
-  font-family: "Georgia", Georgia, Times, serif;
+  font-family: "Avenir Next", "Helvetica Neue", helvetica, arial, sans-serif;
   line-height: 1.5;
   text-rendering: optimizeLegibility; }
 
@@ -847,30 +826,34 @@ p {
   -o-font-feature-settings: "liga", "dlig", "onum";
   font-feature-settings: "liga", "dlig", "onum"; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans Condensed", sans-serif;
-  text-transform: uppercase;
-  line-height: 1; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "SharpSans", sans-serif;
+  line-height: 1;
+  text-transform: uppercase; }
 
-h1, .h1, .post-title {
+h1,
+.h1,
+.post-title {
   font-size: 2.6em; }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: 2.3em; }
 
-h3, .h3 {
+h3,
+.h3 {
   font-size: 1.15em; }
 
-h4, h5, h6 {
+h4,
+h5,
+h6 {
   font-size: 1em; }
 
-/**
- * SCSS template for the sites header
- *
- * @package Ghost
- * @subpackage Plattan
- * @since Plattan 1.0
- */
 .colorpicker {
   position: absolute;
   right: 0.5em;
@@ -890,8 +873,8 @@ h4, h5, h6 {
   line-height: 3em;
   text-align: center;
   border-radius: 100%;
-  background: #90e0d1;
-  box-shadow: inset 0 0 0 0.25em #75d9c6;
+  background: #33d1ff;
+  box-shadow: inset 0 0 0 0.25em #00C6FF;
   speak: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -915,7 +898,7 @@ h4, h5, h6 {
   left: 50%;
   display: none;
   opacity: 0;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "SharpSans", sans-serif;
   pointer-events: none;
   color: #fff;
   text-transform: uppercase;
@@ -925,8 +908,8 @@ h4, h5, h6 {
   line-height: 1em;
   text-align: center;
   border-radius: 100%;
-  background: #90e0d1;
-  box-shadow: inset 0 0 0 0.25em #75d9c6; }
+  background: #33d1ff;
+  box-shadow: inset 0 0 0 0.25em #00C6FF; }
   .cp-color.active {
     -webkit-animation: fadeText 0.75s ease-out;
     -moz-animation: fadeText 0.75s ease-out;
@@ -941,7 +924,7 @@ h4, h5, h6 {
   float: left;
   margin-right: 0%;
   width: 100%;
-  background: #ef4f47;
+  background: #232F49;
   position: relative;
   z-index: 1;
   -webkit-transform: translatez(0);
@@ -996,7 +979,7 @@ h4, h5, h6 {
   -webkit-transition: background 0.2s ease-in-out;
   -moz-transition: background 0.2s ease-in-out;
   transition: background 0.2s ease-in-out;
-  background: #75d9c6;
+  background: #00C6FF;
   height: auto; }
 
 .header-content {
@@ -1009,7 +992,7 @@ h4, h5, h6 {
   -webkit-animation-iteration-count: 1;
   -moz-animation-iteration-count: 1;
   animation-iteration-count: 1;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "SharpSans", sans-serif;
   text-transform: uppercase;
   color: #fff;
   display: block;
@@ -1094,7 +1077,7 @@ h4, h5, h6 {
     font-variant: normal;
     font-weight: normal;
     font-family: 'northemes-icons';
-    background: #90e0d1;
+    background: #33d1ff;
     display: block;
     width: 2.2em;
     height: 2.2em;
@@ -1106,7 +1089,7 @@ h4, h5, h6 {
       .social-icons a {
         font-size: 1.8em; } }
   .social-icons a:hover {
-    background: #9ee4d7;
+    background: #4cd7ff;
     line-height: 2.2em; }
 
 .expander {
@@ -1125,8 +1108,8 @@ h4, h5, h6 {
   -webkit-transition: color 0.2s ease-in-out;
   -moz-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
-  color: #facac7;
-  font-family: "Open Sans Condensed", sans-serif;
+  color: #bdc0c8;
+  font-family: "SharpSans", sans-serif;
   text-transform: uppercase;
   cursor: pointer;
   padding: 0 1em;
@@ -1178,7 +1161,7 @@ ul.main-menu {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "SharpSans", sans-serif;
   text-transform: uppercase;
   padding: 0;
   font-size: 1em; }
@@ -1245,7 +1228,7 @@ ul.main-menu {
     -webkit-transition: color 0.2s ease-in-out;
     -moz-transition: color 0.2s ease-in-out;
     transition: color 0.2s ease-in-out;
-    color: #facac7;
+    color: #bdc0c8;
     white-space: nowrap;
     display: block; }
     @media screen and (min-width: 768px) {
@@ -1260,7 +1243,7 @@ ul.main-menu.expanded {
   height: auto;
   opacity: 1;
   position: static;
-  background: #ef4f47;
+  background: #232F49;
   padding: 0 1em 1em 1em; }
   ul.main-menu.expanded .menu-item {
     -webkit-animation-delay: 0s;
@@ -1270,13 +1253,6 @@ ul.main-menu.expanded {
     ul.main-menu.expanded {
       display: block; } }
 
-/**
- * SCSS template for the sites content area
- *
- * @package Ghost
- * @subpackage Plattan
- * @since Plattan 1.0
- */
 .page-content {
   -webkit-animation: bounce-in-up 0.7s ease;
   -moz-animation: bounce-in-up 0.7s ease;
@@ -1414,6 +1390,9 @@ article.post .post-title {
     article.post .post-title {
       margin-top: 1em;
       font-size: 2.6em; } }
+  article.post .post-title .comments-count {
+    font-size: 26px;
+    color: #999; }
 
 article.post .read-more {
   display: inline-block;
@@ -1424,13 +1403,15 @@ article.post .read-more {
   -webkit-transition: background 0.2s ease-in-out;
   -moz-transition: background 0.2s ease-in-out;
   transition: background 0.2s ease-in-out;
-  margin-top: 1em;
-  background: #ef4f47;
-  padding: 0.65em 1.25em;
+  background: #46d633;
+  border-bottom: 1px solid #32aa22;
   color: #fff;
-  border-radius: 0.25em; }
+  margin-top: 1em;
+  padding: 12px 25px 10px; }
   article.post .read-more:hover {
-    background: #d7473f; }
+    background: #55d944; }
+  article.post .read-more:focus, article.post .read-more:active {
+    background: #38ab28; }
 
 article.post .post-meta,
 .author .author-meta {
@@ -1470,8 +1451,8 @@ article.page .post-meta {
   text-decoration: none; }
 
 .edit-link a {
-  color: #ef4f47;
-  font-family: "Open Sans Condensed", sans-serif;
+  color: #232F49;
+  font-family: "SharpSans", sans-serif;
   display: block;
   margin: -1em 0 1em; }
 
@@ -1490,7 +1471,7 @@ article.page .post-meta {
   margin-top: 2em; }
   .page-numbers li {
     /*background: shade($color-2, 10%);*/
-    font-family: "Open Sans Condensed", sans-serif;
+    font-family: "SharpSans", sans-serif;
     font-size: 1.2em;
     height: 3em;
     width: 3em;
@@ -1504,7 +1485,7 @@ article.page .post-meta {
     -moz-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out; }
     .page-numbers a:hover {
-      background: #90e0d1; }
+      background: #33d1ff; }
 
 .social {
   *zoom: 1; }
@@ -1516,7 +1497,7 @@ article.page .post-meta {
 
 .social a {
   *zoom: 1;
-  background: #edfaf8;
+  background: #99e8ff;
   display: block;
   float: left;
   margin-right: 10px;
@@ -1539,7 +1520,7 @@ article.page .post-meta {
   font-variant: normal;
   font-weight: normal;
   font-family: 'northemes-icons';
-  background: #90e0d1;
+  background: #33d1ff;
   display: block;
   width: 2.2em;
   height: 2.2em;
@@ -1555,53 +1536,68 @@ article.page .post-meta {
 .comments {
   margin-top: 4em; }
 
-/**
- * SCSS template for post-format styles
- *
- * @package Ghost
- * @subpackage Plattan
- * @since Plattan 1.0
- */
-.home-template .quote-title, .archive-template .quote-title {
+.home-template .quote-title,
+.archive-template .quote-title {
   display: none; }
-.home-template .tag-format-tweet h2, .home-template .tag-format-quote h2, .archive-template .tag-format-tweet h2, .archive-template .tag-format-quote h2 {
+.home-template .tag-format-tweet h2,
+.home-template .tag-format-quote h2,
+.archive-template .tag-format-tweet h2,
+.archive-template .tag-format-quote h2 {
   display: none; }
-.home-template .tag-format-tweet .post-content, .home-template .tag-format-quote .post-content, .archive-template .tag-format-tweet .post-content, .archive-template .tag-format-quote .post-content {
-  margin-top: 2em;
+.home-template .tag-format-tweet .post-content,
+.home-template .tag-format-quote .post-content,
+.archive-template .tag-format-tweet .post-content,
+.archive-template .tag-format-quote .post-content {
   font-size: 1.4em;
-  font-style: italic; }
-.home-template .tag-format-tweet p, .home-template .tag-format-quote p, .archive-template .tag-format-tweet p, .archive-template .tag-format-quote p {
+  font-style: italic;
+  margin-top: 2em; }
+.home-template .tag-format-tweet p,
+.home-template .tag-format-quote p,
+.archive-template .tag-format-tweet p,
+.archive-template .tag-format-quote p {
   margin-bottom: 0; }
 .home-template .tag-format-tweet .post-meta,
 .home-template .tag-format-tweet .post-continue,
-.home-template .tag-format-tweet .read-more, .home-template .tag-format-quote .post-meta,
+.home-template .tag-format-tweet .read-more,
+.home-template .tag-format-quote .post-meta,
 .home-template .tag-format-quote .post-continue,
-.home-template .tag-format-quote .read-more, .archive-template .tag-format-tweet .post-meta,
+.home-template .tag-format-quote .read-more,
+.archive-template .tag-format-tweet .post-meta,
 .archive-template .tag-format-tweet .post-continue,
-.archive-template .tag-format-tweet .read-more, .archive-template .tag-format-quote .post-meta,
+.archive-template .tag-format-tweet .read-more,
+.archive-template .tag-format-quote .post-meta,
 .archive-template .tag-format-quote .post-continue,
 .archive-template .tag-format-quote .read-more {
   display: none; }
-.home-template .tag-format-tweet, .archive-template .tag-format-tweet {
+.home-template .tag-format-tweet,
+.archive-template .tag-format-tweet {
   background-color: #e5f6fd; }
-  .home-template .tag-format-tweet:before, .archive-template .tag-format-tweet:before {
+  .home-template .tag-format-tweet:before,
+  .archive-template .tag-format-tweet:before {
     content: "k";
     background-color: #00acee; }
-.home-template .tag-format-link, .archive-template .tag-format-link {
-  background-color: #fdedec; }
-  .home-template .tag-format-link:before, .archive-template .tag-format-link:before {
+.home-template .tag-format-link,
+.archive-template .tag-format-link {
+  background-color: #e9eaec; }
+  .home-template .tag-format-link:before,
+  .archive-template .tag-format-link:before {
     content: "h";
-    background-color: #ef4f47; }
-.home-template .tag-format-quote, .archive-template .tag-format-quote {
-  background-color: #f1fbf9; }
-  .home-template .tag-format-quote:before, .archive-template .tag-format-quote:before {
+    background-color: #232F49; }
+.home-template .tag-format-quote,
+.archive-template .tag-format-quote {
+  background-color: #e5f9ff; }
+  .home-template .tag-format-quote:before,
+  .archive-template .tag-format-quote:before {
     content: "a";
-    background-color: #75d9c6; }
-  .home-template .tag-format-quote .quote-title, .archive-template .tag-format-quote .quote-title {
+    background-color: #00C6FF; }
+  .home-template .tag-format-quote .quote-title,
+  .archive-template .tag-format-quote .quote-title {
     display: inline; }
-.home-template .tag-format-link .post-meta, .archive-template .tag-format-link .post-meta {
-  border-color: #fce4e3; }
-  .home-template .tag-format-link .post-meta .post-tags, .archive-template .tag-format-link .post-meta .post-tags {
+.home-template .tag-format-link .post-meta,
+.archive-template .tag-format-link .post-meta {
+  border-color: #dedfe3; }
+  .home-template .tag-format-link .post-meta .post-tags,
+  .archive-template .tag-format-link .post-meta .post-tags {
     display: none; }
 
 .site-footer {

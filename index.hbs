@@ -3,15 +3,14 @@
 
 <section class="page-content primary" role="main">
 	{{#foreach posts}}
-		<article id="post-{{id}}" class="post {{post_class}}" role="article" itemscope
-				 itemtype="http://schema.org/Article">
+		<article id="post-{{id}}" class="post {{post_class}}" role="article" itemscope itemtype="http://schema.org/Article">
 
 			{{content words = "0"}}
 
 			<div class="content-wrapper">
 				<h2 class="post-title">
 					<a href="{{{url}}}" rel="bookmark">
-						{{title}}
+						{{title}} <a href="{{url}}#disqus_thread" class="comments-count"></a>
 					</a>
 				</h2>
 
@@ -36,7 +35,7 @@
 						{{excerpt words="80"}} <span class="post-continue">&hellip;</span>
 						<b class="quote-title"><br/> - {{title}}</b>
 					</p>
-					<a class="read-more" href="{{{url}}}">Read more</a>
+					<a class="read-more" href="{{url}}">Read more</a>
 				</div>
 			</div>
 		</article>

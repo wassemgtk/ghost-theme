@@ -1,28 +1,10 @@
-/******************************************************************************\
-    Vendor imports
-\******************************************************************************/
-@import url("http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700");
-// google fonts
 @import "vendor/normalize";
-// reset html elements
 @import "vendor/bourbon/bourbon";
-// mixin library
 @import "vendor/neat/neat-helpers";
-
-// helpers for the grid
-
-/******************************************************************************\
-    Variables
-\******************************************************************************/
 
 // color variables
 $text: $dark;
 $twitter: #00acee;
-
-// typeface variables
-$headings: 'Open Sans Condensed', sans-serif;
-$bodycopy: 'Georgia', Georgia, Times, serif;
-$base-font-size: 16px;
 
 // icon array to give the icons relevant names
 $icons: (
@@ -57,10 +39,6 @@ $icons: (
   'collapse' '\e602'
 );
 
-/******************************************************************************\
-    Grid settings
-\******************************************************************************/
-
 // Change the grid settings
 $column: 70px;
 $gutter: 0px;
@@ -78,14 +56,15 @@ $xlarge: new-breakpoint(min-width 1200px);
 
 // Import the grid system
 @import "vendor/neat/neat";
-// grid system
-
-/******************************************************************************\
-    Includes
-\******************************************************************************/
 
 // include icon font files
-@include font-face('northemes-icons', '../fonts/northemes-icons');
+@include font-face('northemes-icons', '../fonts/Icons/northemes-icons');
+@include font-face('SharpSans', '../fonts/SharpSans/SharpSansFrontieres-Light');
+
+// typeface variables
+$headings: 'SharpSans', sans-serif;
+$bodycopy: 'Avenir Next', 'Helvetica Neue', helvetica, arial, sans-serif;
+$base-font-size: 16px;
 
 /******************************************************************************\
     Functions

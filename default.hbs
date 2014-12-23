@@ -30,13 +30,9 @@
 	{{! Styles"n"Scripts }}
 	<link rel="stylesheet" type="text/css" href="/assets/css/vendor/prism.css"/>
 	<link rel="stylesheet" type="text/css" href="/assets/css/style.css"/>
-
-	<script type="text/javascript">//<![CDATA[
-	var disqus = {
-		activate: true,
-		shortname: 'northemes'
-	};
-	//]]></script>
+	<script>
+		var disqus_shortname = 'tw-tech-blog';
+	</script>
 
 	{{ghost_head}}
 </head>
@@ -49,5 +45,14 @@
 
 	<script type="text/javascript" src="/assets/js/vendor/prism.js"></script>
 	<script type="text/javascript" src="/assets/js/scripts.min.js"></script>
+
+	<script type="text/javascript">
+		(function () {
+			var s = document.createElement('script'); s.async = true;
+			s.type = 'text/javascript';
+			s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+			(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+		}());
+	</script>
 </body>
 </html>
