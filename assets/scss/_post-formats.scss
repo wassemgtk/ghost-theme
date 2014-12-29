@@ -1,3 +1,18 @@
+.post-meta {
+  > .author-thumb-div {
+    height: 2.85em;
+    width: 2.85em;
+    border-radius: 100%;
+    overflow: hidden;
+    display: inline-block;
+  }
+}
+
+.info-div {
+  display: inline-block;
+  vertical-align: top;
+}
+
 .home-template,
 .archive-template {
 

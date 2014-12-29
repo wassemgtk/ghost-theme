@@ -114,6 +114,10 @@
 
   a {
     color: $light;
+    > span {
+      font-family: $bodycopy;
+      text-transform: none;
+    }
   }
 
   img {
@@ -121,6 +125,11 @@
     height: 4em;
     width: auto;
     margin-bottom: 1em;
+  }
+
+  .second {
+    background-image: url("/assets/images/flag-shape.svg");
+    background-size: cover;
   }
 
   @include media($medium) {

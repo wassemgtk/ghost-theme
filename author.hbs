@@ -51,21 +51,23 @@
 					</a>
 				</h2>
 
-				<div class="post-meta">
-					Posted
+                <div class="post-meta">
+					{{#if author.image}}
+                        <div class="author-thumb-div"><img src="{{author.image}}" alt="" /></div>
+					{{/if}}
+                    <div class="info-div">
+						{{#author}}<a href="{{url}}">{{name}}</a>{{/author}}
+                        on
 						<span datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">
 							{{date format='dddd'}}, {{date format='DD MMM'}}
 						</span>
-					{{#author}}
-						by <a href="{{url}}">{{name}}</a>
-					{{/author}}
-					{{#if tags}}
-						<div class="post-tags">
-							Tags:
-							{{tags seperator=", "}}
-						</div>
-					{{/if}}
-				</div>
+						{{#if tags}}
+                            <div class="post-tags">Tags:
+								{{tags seperator=", "}}
+                            </div>
+						{{/if}}
+                    </div>
+                </div>
 
 				<div class="post-content" itemprop="articleBody">
 

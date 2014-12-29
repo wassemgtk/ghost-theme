@@ -162,11 +162,12 @@ article.post .post-meta,
 .author .author-image {
   float: left;
   position: relative;
+  height: 6em;
   width: 6em;
-  border-radius: 3em;
-  margin-right: 1.5em;
-  margin-bottom: 1.5em;
+  border-radius: 100%;
   overflow: hidden;
+  display: inline-block;
+  margin-bottom: 1.5em;
 
   img {
     width: 100%;

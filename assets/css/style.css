@@ -1003,11 +1003,17 @@ h6 {
   margin: 1em; }
   .header-content a {
     color: #f5f7f9; }
+    .header-content a > span {
+      font-family: "Avenir Next", "Helvetica Neue", helvetica, arial, sans-serif;
+      text-transform: none; }
   .header-content img {
     display: block;
     height: 4em;
     width: auto;
     margin-bottom: 1em; }
+  .header-content .second {
+    background-image: url("/assets/images/flag-shape.svg");
+    background-size: cover; }
   @media screen and (min-width: 768px) {
     .header-content {
       -webkit-animation: slide-in 0.4s ease-in-out;
@@ -1444,11 +1450,12 @@ article.post .post-meta,
 .author .author-image {
   float: left;
   position: relative;
+  height: 6em;
   width: 6em;
-  border-radius: 3em;
-  margin-right: 1.5em;
-  margin-bottom: 1.5em;
-  overflow: hidden; }
+  border-radius: 100%;
+  overflow: hidden;
+  display: inline-block;
+  margin-bottom: 1.5em; }
   .author .author-image img {
     width: 100%; }
 
@@ -1546,6 +1553,17 @@ article.page .post-meta {
 
 .comments {
   margin-top: 4em; }
+
+.post-meta > .author-thumb-div {
+  height: 2.85em;
+  width: 2.85em;
+  border-radius: 100%;
+  overflow: hidden;
+  display: inline-block; }
+
+.info-div {
+  display: inline-block;
+  vertical-align: top; }
 
 .home-template .quote-title,
 .archive-template .quote-title {
