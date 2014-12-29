@@ -59,7 +59,7 @@
 .sidebar-header {
   @include transition(background 0.2s ease-in-out);
   @include span-columns(12);
-  background: $dark-blue;
+  background: $blue;
   position: relative;
   z-index: 1;
   -webkit-transform: translatez(0);
@@ -98,7 +98,7 @@
 
 .first {
   @include transition(background 0.2s ease-in-out);
-  background: $blue;
+  background: $dark-blue;
   height: auto;
 }
 
@@ -116,12 +116,19 @@
     color: $light;
   }
 
+  img {
+    display: block;
+    height: 4em;
+    width: auto;
+    margin-bottom: 1em;
+  }
+
   @include media($medium) {
     @include animation(slide-in .4s ease-in-out);
     @include animation-fill-mode(forwards);
     @include rem(max-width, 26);
     width: 100%;
-    margin: 2.85em 0;
+    margin: 1.5em 0 2.85em 0;
     float: right;
   }
 }
@@ -185,7 +192,7 @@
     font-variant: normal;
     font-weight: normal;
     font-family: 'northemes-icons';
-    background: tint($blue, 20%);
+    background: tint($dark-blue, 20%);
     display: block;
     width: 2.2em;
     height: 2.2em;
@@ -200,7 +207,7 @@
   }
 
   a:hover {
-    background: tint($blue, 30%);
+    background: tint($dark-blue, 30%);
     line-height: 2.2em;
   }
 }
