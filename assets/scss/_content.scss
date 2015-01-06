@@ -282,7 +282,7 @@ article.page .post-meta {
   margin: 0 auto !important;
   padding-left: 120px;
 
-  @media (max-width: 800px) {
+  @media (max-width: 760px) {
     padding: 0 30px;
   }
 
@@ -292,12 +292,16 @@ article.page .post-meta {
 
   .content-wrapper {
     margin: 0 auto !important;
+
+    @media (min-width: 960px) {
+      max-width: 50rem !important;
+    }
   }
 }
 
 .post-footer {
   overflow: hidden;
-  margin: 70px 0 50px 0;
+  margin: 70px 0 30px;
 
   .post-author {
     float: left;
