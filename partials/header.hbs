@@ -2,8 +2,11 @@
 
 	<div class="first">
 		<div class="header-content">
-			{{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}"
-																			 alt="TransferWise Tech Blog"/></a>{{/if}}
+			{{#if @blog.logo}}
+				<a class="blog-logo" href="{{@blog.url}}">
+					<img src="{{@blog.logo}}" alt="TransferWise Tech Blog"/>
+				</a>
+			{{/if}}
 			<a class="blog-title" href="{{@blog.url}}" title="{{@blog.title}}">
 				{{@blog.title}}
 				<span class="byline">{{@blog.description}}</span>
@@ -24,8 +27,5 @@
 				</a>
 			</div>
 		</div>
-	</div>
-
-	<div class="second">
 	</div>
 </header>

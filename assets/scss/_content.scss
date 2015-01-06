@@ -276,9 +276,28 @@ article.page .post-meta {
   }
 }
 
+.post-page-content {
+  float: none !important;
+  width: 100%;
+  margin: 0 auto !important;
+  padding-left: 120px;
+
+  @media (max-width: 800px) {
+    padding: 0 30px;
+  }
+
+  .post-content {
+    margin-top: 50px;
+  }
+
+  .content-wrapper {
+    margin: 0 auto !important;
+  }
+}
+
 .post-footer {
   overflow: hidden;
-  margin-top: 50px;
+  margin: 70px 0 50px 0;
 
   .post-author {
     float: left;
@@ -302,7 +321,6 @@ article.page .post-meta {
       color: #d64632;
     }
   }
-
 }
 
 pre {
