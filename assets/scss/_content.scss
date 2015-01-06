@@ -31,15 +31,15 @@
 
 article.post,
 .author {
-  padding: 0 0 3em 0;
   position: relative;
   overflow: hidden;
+  padding: 0 0 3em;
   font-size: 1.1em;
 
   img {
+    display: block;
     width: 100%;
     height: auto;
-    display: block;
   }
 
   @include icon {
@@ -130,11 +130,11 @@ article.post .read-more {
   @include inline-block;
   @include transition(background 0.2s ease-in-out);
 
-  background: $green;
-  border-bottom: 1px solid #32aa22;
-  color: #fff;
   margin-top: 1em;
   padding: 12px 25px 10px;
+  border-bottom: 1px solid #32aa22;
+  color: #fff;
+  background: $green;
 
   &:hover {
     background: $hover-green;
@@ -155,22 +155,26 @@ article.post .post-meta,
   margin-bottom: 1em;
 }
 
-.author .author-bio {
-  @include clearfix;
-}
+.author {
+  margin-top: 20px;
+  text-align: center;
 
-.author .author-image {
-  float: left;
-  position: relative;
-  height: 6em;
-  width: 6em;
-  border-radius: 100%;
-  overflow: hidden;
-  display: inline-block;
-  margin-bottom: 1.5em;
+  .post-title {
+    line-height: 25px;
+  }
 
-  img {
-    width: 100%;
+  .author-bio {
+    @include clearfix;
+  }
+
+  .author-image {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-position: center center;
+    background-size: cover;
   }
 }
 
@@ -236,43 +240,73 @@ article.page .post-meta {
 
 .social {
   @include clearfix;
+
+  a {
+    @include clearfix;
+    background: lighten($blue, 30%);
+    display: block;
+    float: left;
+    margin-right: 10px;
+    color: $light;
+    line-height: 60px;
+    padding: 0 10px 0 0;
+    margin-top: 10px;
+
+    span.icon {
+      speak: none;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-transform: none;
+      font-family: 'northemes-icons';
+      font-style: normal;
+      font-variant: normal;
+      font-weight: normal;
+      background: tint($blue, 20%);
+      display: block;
+      width: 2.2em;
+      height: 2.2em;
+      line-height: 2.2em;
+      text-align: center;
+      color: #fff;
+
+      @include transition(background 0.2s ease-in-out);
+      float: left;
+      margin-right: 10px;
+    }
+  }
 }
 
-.social a {
-  @include clearfix;
-  background: lighten($blue, 30%);
-  display: block;
-  float: left;
-  margin-right: 10px;
-  color: $light;
-  line-height: 60px;
-  padding: 0 10px 0 0;
-  margin-top: 10px;
+.post-footer {
+  overflow: hidden;
+  margin-top: 20px;
+
+  .post-author {
+    float: left;
+    width: 65%;
+
+    @media (max-width: 1020px) {
+      width: 100%;
+    }
+  }
+
+  .post-social {
+    overflow: hidden;
+    float: right;
+    text-align: right;
+
+    .social-facebook {
+      color: #395286;
+    }
+
+    .social-google {
+      color: #d64632;
+    }
+  }
+
 }
 
-.social a span.icon {
-  speak: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-transform: none;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  font-family: 'northemes-icons';
-  background: tint($blue, 20%);
-  display: block;
-  width: 2.2em;
-  height: 2.2em;
-  line-height: 2.2em;
-  text-align: center;
-  color: #fff;
-
-  @include transition(background 0.2s ease-in-out);
-  float: left;
-  margin-right: 10px;
-}
-
-.comments {
-  margin-top: 4em;
+pre {
+  border: 1px solid #eaeaea;
+  border-radius: 3px;
 }
 

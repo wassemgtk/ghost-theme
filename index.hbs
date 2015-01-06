@@ -3,7 +3,8 @@
 
 <section class="page-content primary" role="main">
 	{{#foreach posts}}
-		<article id="post-{{id}}" class="post {{post_class}}" role="article" itemscope itemtype="http://schema.org/Article">
+		<article id="post-{{id}}" class="post {{post_class}}" role="article" itemscope
+				 itemtype="http://schema.org/Article">
 
 			{{content words = "0"}}
 
@@ -14,28 +15,24 @@
 					</a>
 				</h2>
 
-                <div class="post-meta">
-					{{#if author.image}}
-                        <div class="author-thumb-div"><img src="{{author.image}}" alt="" /></div>
-					{{/if}}
-                    <div class="info-div">
+				<div class="post-meta">
+					<div class="info-div">
 						{{#author}}<a href="{{url}}">{{name}}</a>{{/author}}
-                        on
+						on
 						<span datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">
 							{{date format='dddd'}}, {{date format='DD MMM'}}
 						</span>
 						{{#if tags}}
-                            <div class="post-tags">Tags:
+							<div class="post-tags">Tags:
 								{{tags seperator=", "}}
-                            </div>
+							</div>
 						{{/if}}
-                    </div>
-                </div>
+					</div>
+				</div>
 
 				<div class="post-content" itemprop="articleBody">
 					<p>
 						{{excerpt words="80"}} <span class="post-continue">&hellip;</span>
-						<b class="quote-title"><br/> - {{title}}</b>
 					</p>
 					<a class="read-more" href="{{url}}">Read more</a>
 				</div>

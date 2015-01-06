@@ -2,24 +2,25 @@
 
 	<div class="first">
 		<div class="header-content">
-			{{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="TransferWise Tech Blog" /></a>{{/if}}
+			{{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}"
+																			 alt="TransferWise Tech Blog"/></a>{{/if}}
 			<a class="blog-title" href="{{@blog.url}}" title="{{@blog.title}}">
 				{{@blog.title}}
 				<span class="byline">{{@blog.description}}</span>
 			</a>
 
 			<div class="social-icons">
-                <a href="https://www.transferwise.com" title="TransferWise">
-                    <img src="/assets/images/transferwise.svg">
+				<a href="https://www.transferwise.com" title="TransferWise" target="_blank">
+					<img src="/assets/images/transferwise.svg">
 				</a>
-				<a href="https://twitter.com/transferwise" title="TransferWise on Twitter">
-                    <img src="/assets/images/twitter.svg">
+				<a href="https://twitter.com/transferwise" title="TransferWise on Twitter" target="_blank">
+					<img src="/assets/images/twitter.svg">
 				</a>
-				<a href="https://www.facebook.com/transferwise" title="TransferWise on Facebook">
+				<a href="https://www.facebook.com/transferwise" title="TransferWise on Facebook" target="_blank">
 					<img src="/assets/images/facebook.svg">
 				</a>
 				<a href="{{@blog.url}}/rss/" title="RSS">
-                    <img src="/assets/images/rss.svg">
+					<img src="/assets/images/rss.svg">
 				</a>
 			</div>
 		</div>
