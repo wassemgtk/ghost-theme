@@ -1305,10 +1305,11 @@ ul.main-menu.expanded {
   @media (max-width: 760px) {
     .post-header {
       width: 100%; } }
-  @media (max-width: 760px) {
-    .post-header .first {
-      display: block;
-      float: left; } }
+  .post-header .first {
+    display: block; }
+    @media (max-width: 760px) {
+      .post-header .first {
+        float: left; } }
   .post-header .second {
     position: absolute;
     bottom: 20px; }
