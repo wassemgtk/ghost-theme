@@ -93,8 +93,7 @@ article.post,
   display: none;
 }
 
-article.post .content-wrapper,
-.author .content-wrapper {
+.content-wrapper {
   @include rem(max-width, 40);
   position: relative;
   margin: 0 auto;
@@ -108,10 +107,7 @@ article.post .content-wrapper,
     max-width: none;
     margin: 0;
     padding: 0 5%;
-  }
 
-  @include media($max-small) {
-    padding: 0 !important;
   }
 
   @media (min-width: 968px) and (max-width: 1200px) {
@@ -289,6 +285,7 @@ article.page .post-meta {
   }
 }
 
+// Post page
 .post-page-content {
   float: none !important;
   width: 100%;
@@ -296,7 +293,7 @@ article.page .post-meta {
   padding-left: 120px;
 
   @include media($max-medium) {
-    padding: 0 30px;
+    padding-left: 0;
   }
 
   .post-content {
@@ -331,9 +328,3 @@ article.page .post-meta {
     }
   }
 }
-
-pre {
-  border: 1px solid #eaeaea;
-  border-radius: 3px;
-}
-

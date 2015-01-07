@@ -440,6 +440,7 @@ ul.main-menu.expanded {
 
     @include media($max-medium) {
       float: left;
+      padding-left: 1em;
     }
   }
 
