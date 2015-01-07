@@ -928,7 +928,7 @@ h6 {
   float: left;
   margin-right: 0%;
   width: 100%;
-  background: #232F49;
+  background: #00C6FF;
   position: relative;
   z-index: 1;
   -webkit-transform: translatez(0);
@@ -987,19 +987,30 @@ h6 {
   -webkit-transition: background 0.2s ease-in-out;
   -moz-transition: background 0.2s ease-in-out;
   transition: background 0.2s ease-in-out;
+  position: fixed;
+  top: 0;
+  width: 100%;
   height: auto;
-  background: #232F49;
-  display: none; }
+  background: #232F49; }
+  @media screen and (min-width: 768px) {
+    .first {
+      padding: 40px; } }
+  @media screen and (max-width: 768px) {
+    .first {
+      position: inherit;
+      background: #232F49; } }
   .first .header-content {
     float: none; }
 
 .second .header-content {
   position: fixed;
   bottom: 0;
-  left: 30px; }
+  left: 30px;
+  margin-bottom: 5px; }
   @media screen and (max-width: 768px) {
     .second .header-content {
       position: inherit;
+      display: none;
       background: #232F49; } }
 
 .header-content {
@@ -1014,9 +1025,7 @@ h6 {
   animation-iteration-count: 1;
   display: block;
   margin: 1em;
-  color: #fff;
-  font-family: "SharpSans", sans-serif;
-  text-transform: uppercase; }
+  color: #fff; }
   .header-content a {
     color: #fff; }
     .header-content a > span {
@@ -1043,7 +1052,7 @@ h6 {
 .blog-title {
   max-width: 350px;
   font-size: 1.8em;
-  line-height: 1; }
+  line-height: 45px; }
   @media screen and (min-width: 480px) {
     .blog-title {
       font-size: 2.4em; } }
@@ -1306,7 +1315,8 @@ ul.main-menu.expanded {
     .post-header {
       width: 100%; } }
   .post-header .first {
-    display: block; }
+    display: block;
+    padding: 0 1.8em; }
     @media (max-width: 760px) {
       .post-header .first {
         float: left; } }

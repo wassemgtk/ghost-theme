@@ -2,16 +2,6 @@
 
 	<div class="first">
 		<div class="header-content">
-			{{#if @blog.logo}}
-				<a class="blog-logo" href="{{@blog.url}}">
-					<img src="{{@blog.logo}}" alt="TransferWise Tech Blog"/>
-				</a>
-			{{/if}}
-		</div>
-	</div>
-
-	<div class="second">
-		<div class="header-content">
 			<a class="blog-title" href="{{@blog.url}}" title="{{@blog.title}}">
 				{{@blog.title}}
 				<span class="byline">{{@blog.description}}</span>
@@ -31,6 +21,18 @@
 					<img src="/assets/images/rss.svg">
 				</a>
 			</div>
+		</div>
+	</div>
+
+	<div class="second">
+		<div class="header-content">
+			<!--{{#if @blog.logo}}
+				<a class="blog-logo" href="{{@blog.url}}">
+					<img src="{{@blog.logo}}" alt="TransferWise Tech Blog"/>
+				</a>
+			{{/if}}-->
+
+			<p><a href="https://transferwise.com/jobs" target="_blank">We are hiring! See available positions..</a></p>
 		</div>
 	</div>
 </header>
