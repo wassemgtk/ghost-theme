@@ -8,6 +8,10 @@
   @include media($medium) {
     @include span-columns(7);
     @include shift(5);
+
+    padding-left: 345px;
+    width: 100% !important;
+    margin: 0 !important;
   }
 
   @include media($large) {
@@ -18,12 +22,12 @@
 
 .home article.post .post-thumbnail {
   @include rem(margin-bottom, -1.5);
-  height: 16.39em;
   overflow: hidden;
+  height: 16.39em;
 
   .image {
-    height: 100%;
     width: 100%;
+    height: 100%;
     background-position: center center;
     background-size: cover;
   }
@@ -92,19 +96,28 @@ article.post,
 article.post .content-wrapper,
 .author .content-wrapper {
   @include rem(max-width, 40);
-  margin-left: 5%;
-  margin-right: 5%;
   position: relative;
+  margin: 0 auto;
 
   @include media($medium) {
-    margin-left: 15%;
-    margin-right: 15%;
+    max-width: 50rem !important;
   }
 
-  @include media($large) {
-    margin-left: 10%;
-    margin-right: 10%;
+  @include media($max-medium) {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0 5%;
   }
+
+  @include media($max-small) {
+    padding: 0 !important;
+  }
+
+  @media (min-width: 968px) and (max-width: 1200px) {
+    margin: 0 5%;
+  }
+
 }
 
 article.post .post-title {
@@ -288,18 +301,6 @@ article.page .post-meta {
 
   .post-content {
     margin-top: 50px;
-  }
-
-  .content-wrapper {
-    margin: 0 auto !important;
-
-    @media (min-width: 960px) {
-      max-width: 50rem !important;
-    }
-
-    @media(max-width: 815px) and (min-width: 768px) {
-      max-width: 35rem !important;
-    }
   }
 }
 

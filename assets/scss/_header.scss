@@ -59,7 +59,7 @@
 .sidebar-header {
   @include transition(background 0.2s ease-in-out);
   @include span-columns(12);
-  background: $blue;
+  background: $dark-blue;
   position: relative;
   z-index: 1;
   -webkit-transform: translatez(0);
@@ -71,6 +71,8 @@
   @include media($medium) {
     @include span-columns(5);
     @include position(fixed, 0em 0 0em 0em);
+
+    width: 345px !important;
   }
 
   @include media($max-medium) {
@@ -111,7 +113,7 @@
   background: $dark-blue;
 
   @include media($medium) {
-    padding: 40px;
+    padding: 40px 30px;
   }
 
   @include media($max-medium) {
@@ -412,9 +414,16 @@ ul.main-menu.expanded {
 
 .post-header {
   overflow: hidden;
-  width: 120px;
   height: 100%;
   background: $dark-blue;
+
+  @include media($medium) {
+    width: 120px !important;
+  }
+
+  @include media($max-medium) {
+    width: 100%;
+  }
 
   .blog-logo img {
     width: 55px;
@@ -423,10 +432,6 @@ ul.main-menu.expanded {
     @include media($max-medium) {
       width: 40px;
     }
-  }
-
-  @include media($max-medium) {
-    width: 100%;
   }
 
   .first {
