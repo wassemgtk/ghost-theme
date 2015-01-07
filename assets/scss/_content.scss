@@ -282,7 +282,7 @@ article.page .post-meta {
   margin: 0 auto !important;
   padding-left: 120px;
 
-  @media (max-width: 760px) {
+  @include media($max-medium) {
     padding: 0 30px;
   }
 
@@ -295,6 +295,10 @@ article.page .post-meta {
 
     @media (min-width: 960px) {
       max-width: 50rem !important;
+    }
+
+    @media(max-width: 815px) and (min-width: 768px) {
+      max-width: 35rem !important;
     }
   }
 }

@@ -51,7 +51,7 @@ $visual-grid-index: front;
 // Define your breakpoints
 $small: new-breakpoint(min-width 480px);
 $medium: new-breakpoint(min-width 768px);
-$max-medium: new-breakpoint(max-width 768px);
+$max-medium: new-breakpoint(max-width 767px);
 $large: new-breakpoint(min-width 1024px);
 $xlarge: new-breakpoint(min-width 1200px);
 

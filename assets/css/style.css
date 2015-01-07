@@ -950,7 +950,7 @@ h6 {
       left: 0em; }
       .sidebar-header:last-child {
         margin-right: 0; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     .sidebar-header {
       position: inherit;
       background: #232F49; } }
@@ -995,7 +995,7 @@ h6 {
   @media screen and (min-width: 768px) {
     .first {
       padding: 40px; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     .first {
       position: inherit;
       background: #232F49; } }
@@ -1007,7 +1007,7 @@ h6 {
   bottom: 0;
   left: 30px;
   margin-bottom: 5px; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     .second .header-content {
       position: inherit;
       display: none;
@@ -1308,22 +1308,22 @@ ul.main-menu.expanded {
   .post-header .blog-logo img {
     width: 55px;
     margin: 1em 0; }
-    @media (max-width: 760px) {
+    @media screen and (max-width: 767px) {
       .post-header .blog-logo img {
         width: 40px; } }
-  @media (max-width: 760px) {
+  @media screen and (max-width: 767px) {
     .post-header {
       width: 100%; } }
   .post-header .first {
     display: block;
     padding: 0 1.8em; }
-    @media (max-width: 760px) {
+    @media screen and (max-width: 767px) {
       .post-header .first {
         float: left; } }
   .post-header .second {
     position: absolute;
     bottom: 20px; }
-    @media (max-width: 760px) {
+    @media screen and (max-width: 767px) {
       .post-header .second {
         position: fixed;
         top: 2px;
@@ -1625,7 +1625,7 @@ article.page .post-meta {
   width: 100%;
   margin: 0 auto !important;
   padding-left: 120px; }
-  @media (max-width: 760px) {
+  @media screen and (max-width: 767px) {
     .post-page-content {
       padding: 0 30px; } }
   .post-page-content .post-content {
@@ -1635,6 +1635,9 @@ article.page .post-meta {
     @media (min-width: 960px) {
       .post-page-content .content-wrapper {
         max-width: 50rem !important; } }
+    @media (max-width: 815px) and (min-width: 768px) {
+      .post-page-content .content-wrapper {
+        max-width: 35rem !important; } }
 
 .post-footer {
   overflow: hidden;

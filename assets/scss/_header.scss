@@ -420,12 +420,12 @@ ul.main-menu.expanded {
     width: 55px;
     margin: 1em 0;
 
-    @media (max-width: 760px) {
+    @include media($max-medium) {
       width: 40px;
     }
   }
 
-  @media (max-width: 760px) {
+  @include media($max-medium) {
     width: 100%;
   }
 
@@ -433,7 +433,7 @@ ul.main-menu.expanded {
     display: block;
     padding: 0 1.8em;
 
-    @media (max-width: 760px) {
+    @include media($max-medium) {
       float: left;
     }
   }
@@ -442,7 +442,7 @@ ul.main-menu.expanded {
     position: absolute;
     bottom: 20px;
 
-    @media (max-width: 760px) {
+    @include media($max-medium) {
       position: fixed;
       top: 2px;
       right: 0;
