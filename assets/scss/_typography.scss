@@ -5,7 +5,10 @@ body {
 }
 
 p {
-  @include rem(margin, 0, 0, 1, 0);
+  @include rem(margin, 0, 0, 1.75, 0);
+
+  color: #3a4145;
+
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   hyphens: auto;

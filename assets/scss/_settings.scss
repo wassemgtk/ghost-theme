@@ -3,7 +3,7 @@
 @import "vendor/neat/neat-helpers";
 
 // color variables
-$text: $dark;
+$text: #3a4145;;
 $twitter: #00acee;
 
 // icon array to give the icons relevant names
@@ -65,7 +65,8 @@ $xlarge: new-breakpoint(min-width 1200px);
 
 // typeface variables
 $headings: 'SharpSans', sans-serif;
-$bodycopy: 'Avenir Next', 'Helvetica Neue', helvetica, arial, sans-serif;
+$header: 'Avenir Next', 'Helvetica Neue', helvetica, arial, sans-serif;
+$bodycopy: 'Merriweather', serif;
 $base-font-size: 16px;
 
 /******************************************************************************\

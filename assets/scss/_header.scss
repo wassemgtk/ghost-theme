@@ -59,9 +59,10 @@
 .sidebar-header {
   @include transition(background 0.2s ease-in-out);
   @include span-columns(12);
-  background: $dark-blue;
-  position: relative;
+
   z-index: 1;
+  position: relative;
+  background: $dark-blue;
   -webkit-transform: translatez(0);
   -moz-transform: translatez(0);
   -ms-transform: translatez(0);
@@ -150,13 +151,10 @@
   margin: 1em;
   color: #fff;
 
+  font-family: $header;
+
   a {
     color: $light;
-
-    > span {
-      font-family: $bodycopy;
-      text-transform: none;
-    }
   }
 
   img {

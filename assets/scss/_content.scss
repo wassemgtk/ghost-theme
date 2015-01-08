@@ -116,21 +116,20 @@ article.post,
 }
 
 article.post .post-title {
-  border-bottom: 3px solid darken($light, 4%);
-  font-size: 1.8em;
-  line-height: 50px;
-  margin-bottom: 0px;
   margin-top: 1.6em;
+  margin-bottom: 0;
   padding-bottom: 10px;
+  border-bottom: 3px solid darken($light, 4%);
+  letter-spacing: .01rem;
 
   @include media($medium) {
-    font-size: 2.2em;
     margin-top: 1em;
+    font-size: 2.2em;
   }
 
   .comments-count {
-    font-size: 26px;
     color: #999;
+    font-size: 26px;
   }
 }
 
@@ -143,6 +142,7 @@ article.post .read-more {
   border-bottom: 1px solid #32aa22;
   color: #fff;
   background: $green;
+  font-family: $header;
 
   &:hover {
     background: $hover-green;
@@ -296,13 +296,13 @@ article.page .post-meta {
   }
 
   .post-content {
-    margin-top: 50px;
+    margin-top: 30px;
   }
 }
 
 .post-footer {
   overflow: hidden;
-  margin: 70px 0 30px;
+  margin: 40px 0 30px;
 
   .post-author {
     float: left;
@@ -310,6 +310,11 @@ article.page .post-meta {
 
     @media (max-width: 1020px) {
       width: 100%;
+    }
+
+    p {
+      margin-top: 10px;
+      font-size: 14px;
     }
   }
 
