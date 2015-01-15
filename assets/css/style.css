@@ -1403,8 +1403,12 @@ article.post,
 .author {
   position: relative;
   overflow: hidden;
-  padding: 0 0 3em;
+  padding: 0 0 2.5em;
   font-size: 1.1em; }
+  @media screen and (min-width: 968px) {
+    article.post,
+    .author {
+      padding: 0 0 3em; } }
   article.post img,
   .author img {
     display: block;
@@ -1482,11 +1486,11 @@ article.post,
       margin: 0 5%; } }
 
 article.post .post-title {
-  margin-top: 1.6em;
   margin-bottom: 0;
   padding-bottom: 10px;
   border-bottom: 3px solid whitesmoke;
-  letter-spacing: .01rem; }
+  letter-spacing: .01rem;
+  line-height: 60px; }
   @media screen and (min-width: 968px) {
     article.post .post-title {
       margin-top: 1em;
