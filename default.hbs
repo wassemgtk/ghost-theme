@@ -21,7 +21,11 @@
 
 	{{! Open Graph meta }}
 	<meta property="og:site_name" content="{{@blog.title}}">
-	<meta property="og:image" content="{{@blog.url}}/assets/images/meta-image.png">
+	{{#if post.image}}
+		<meta property="og:image" content="{{@blog.url}}{{post.image}}">
+	{{else}}
+		<meta property="og:image" content="{{@blog.url}}/assets/images/meta-image.png">
+	{{/if}}
 	<meta property="og:type" content="article">
 	<meta property="og:title" content="{{meta_title}}">
 	<meta property="og:description" content="{{meta_description}}">

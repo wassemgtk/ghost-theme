@@ -1,5 +1,5 @@
 body {
-  font-family: $bodycopy;
+  font-family: $body;
   line-height: 1.5;
   text-rendering: optimizeLegibility;
 }
@@ -21,17 +21,6 @@ p {
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $headings;
-  line-height: 1;
-  text-transform: uppercase;
-}
-
-h1,
 .h1 {
   font-size: 2.6em;
 }
@@ -50,4 +39,38 @@ h4,
 h5,
 h6 {
   font-size: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $headings;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.post-content {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $body;
+    text-transform: none;
+  }
+
+  h1 {
+    font-size: 2.0em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.3em;
+  }
+
+  h4, h5, h6 {
+    font-size: 1em;
+  }
 }

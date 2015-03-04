@@ -20,6 +20,11 @@
   }
 }
 
+.post-thumbnail {
+  max-height: 900px;
+  overflow: hidden;
+}
+
 .home article.post .post-thumbnail {
   @include rem(margin-bottom, -1.5);
   overflow: hidden;

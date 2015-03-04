@@ -7,9 +7,13 @@
 		<article id="post-{{id}}" class="post {{post_class}}" role="article" itemscope
 				 itemtype="http://schema.org/Article">
 
-			<!--<div class="post-thumbnail">
-				{{content words = "0"}}
-			</div>-->
+			{{#if image}}
+				<div class="post-thumbnail">
+					<div>
+						<img src="{{image}}">
+					</div>
+				</div>
+			{{/if}}
 
 			<div class="content-wrapper">
 				<h2 class="post-title">
