@@ -1,0 +1,77 @@
+{{!< default}}
+{{> header}}
+
+<section class="page-content primary" role="main">
+	{{#foreach posts}}
+		<article id="post-{{id}}" class="post {{post_class}}" role="article" itemscope
+				 itemtype="http://schema.org/Article">
+
+			<div class="post-thumbnail">
+				{{content words = "0"}}
+			</div>
+
+			<div class="content-wrapper">
+				<h2 class="post-title">
+					<a href="{{{url}}}" rel="bookmark">
+						{{title}} <a href="{{url}}#disqus_thread" class="comments-count"></a>
+					</a>
+				</h2>
+
+				<div class="post-meta">
+					<div class="info-div">
+						{{#author}}<a href="{{url}}">{{name}}</a>{{/author}}
+						on
+						<span datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">
+							{{date format='dddd'}}, {{date format='DD MMM YYYY'}}
+						</span>
+						{{#if tags}}
+							<div class="post-tags">Tags:
+								{{tags seperator=", "}}
+							</div>
+						{{/if}}
+					</div>
+				</div>
+
+				<div class="post-content" itemprop="articleBody">
+					<p>
+						{{excerpt words="50"}} <span class="post-continue">&hellip;</span>
+					</p>
+					<a class="read-more" href="{{url}}">Por favor leer más</a>
+				</div>
+			</div>
+		</article>
+	{{/foreach}}
+
+	{{#if pagination}}
+		<div class="pagination" role="pagination">
+			{{{pagination}}}
+		</div>
+	{{/if}}
+
+	{{> footer}}
+</section>
+nt-wrapper">
+				<h2 class="post-title">
+					<a href="{{{url}}}" rel="bookmark">
+						{{title}} <a href="{{url}}#disqus_thread" class="comments-count"></a>
+					</a>
+				</h2>
+
+				<div class="post-meta">
+					<div class="info-div">
+						{{#author}}<a href="{{url}}">{{name}}</a>{{/author}}
+						on
+						<span datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">
+							{{date format='dddd'}}, {{date format='DD MMM YYYY'}}
+						</span>
+						{{#if tags}}
+							<div class="post-tags">Tags:
+								{{tags seperator=", "}}
+							</div>
+						{{/if}}
+					</div>
+				</div>
+
+				<div class="post-content" itemprop="articleBody">
+					<p>
+						{{excerp
